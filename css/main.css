@@ -1,0 +1,50 @@
+* {
+
+   padding: 0;
+   margin: 0;
+
+}
+
+body {}
+
+.cabecalho {
+
+   width: 100%;
+   height: 50px;
+   background-color: #0d1620;
+
+}
+
+.cabecalho img {
+   height: 50px;
+
+}
+
+.pink-svg {
+
+   width: 190px;
+   margin-left: 20px;
+
+
+}
+
+.val-background1 {
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+   height: 615px;
+
+}
+
+.val-background1 video {
+   height: 102.4%;
+}
+
+.gifs-1 {
+   position: absolute;
+   margin: 5% auto auto 5%;
+   width: 50%;
+   height: 420px;
+   border-radius: 10px;
+
+}
