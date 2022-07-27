@@ -1,16 +1,26 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+* {
    padding: 0;
    margin: 0;
 
 }
 
 body {
-   background-color: #0d1620;
+   background: url('../img/Val-background-body.png') no-repeat fixed;
+   background-size: cover;
+   background-color: #FAEDDA;
+
+}
+
+.page {
+   width: 94%;
+   margin: 0 auto;
+
 }
 
 .cabecalho {
-
+   position: fixed;
    width: 100%;
    height: 50px;
    background-color: #0d1620;
@@ -18,43 +28,65 @@ body {
 }
 
 .cabecalho img {
-
-   height: 50px;
+   margin-left: 1%;
+   height: 40px;
 
 }
 
 .pink-svg {
-
    width: 190px;
    margin-left: 20px;
 
 }
 
 .val-background1 {
-
-   overflow: hidden;
    width: 100%;
    height: 615px;
 
 }
 
 .val-background1 video {
-
-   height: 102.4%;
+   width: 100%;
+   
 }
 
 .val-gifs {
-   background: url('../img/Val-background-body.png');
-   position: relative;
+   overflow: hidden;
+   background-color: #FAEDDA;
+   background: url('../img/Val-background-body2.png');
+   display: flex;
    width: 100%;
+   height: 530px;
+   max-height: 530px;
 
 }
 
 #gifs-1 {
-   
-   margin: 5% auto auto 5%;
+   margin: 5% auto auto 2%;
    width: 50%;
-   height: 420px;
+   min-width: 50%;
+   height: 380px;
+   min-height: 380px;
    border-radius: 10px;
+
+}
+
+.gifs-1-text {
+   padding: 6% 8%;
+   font-family: 'Montserrat', sans-serif;
+   text-align: justify;
+   color: black;
+   font-size: 17px;
+
+}
+
+.enfase {
+   font-size: 40px;
+
+}
+
+.enfase2 {
+   text-shadow: 4px 0 1px #FF5757;
+   font-size: 40px;
 
 }
