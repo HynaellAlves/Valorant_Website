@@ -5,7 +5,9 @@
 
 }
 
-body {}
+body {
+   background-color: #0d1620;
+}
 
 .cabecalho {
 
@@ -16,6 +18,7 @@ body {}
 }
 
 .cabecalho img {
+
    height: 50px;
 
 }
@@ -25,23 +28,30 @@ body {}
    width: 190px;
    margin-left: 20px;
 
-
 }
 
 .val-background1 {
+
    overflow: hidden;
-   position: relative;
    width: 100%;
    height: 615px;
 
 }
 
 .val-background1 video {
+
    height: 102.4%;
 }
 
-.gifs-1 {
-   position: absolute;
+.val-gifs {
+   background: url('../img/Val-background-body.png');
+   position: relative;
+   width: 100%;
+
+}
+
+#gifs-1 {
+   
    margin: 5% auto auto 5%;
    width: 50%;
    height: 420px;
