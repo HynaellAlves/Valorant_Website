@@ -7,9 +7,9 @@
 }
 
 body {
-   background: url('../img/Val-background-body.png') no-repeat fixed;
-   background-size: cover;
-   background-color: #FAEDDA;
+   background: url(/img/Val-background-body.png) no-repeat fixed;
+   background-size: contain;
+   background-color: #0d1620;
 
 }
 
@@ -47,13 +47,23 @@ body {
 
 .val-background1 video {
    width: 100%;
-   
+
+}
+
+.val-banner {
+   margin-top: 50px;
+   background: url(/img/Val-banner1-variavel.png) no-repeat;
+   width: 100%;
+   height: 600px;
+   background-size: contain;
+
 }
 
 .val-gifs {
    overflow: hidden;
    background-color: #FAEDDA;
-   background: url('../img/Val-background-body2.png');
+   background: url(/img/Val-background-body2.png) no-repeat;
+   background-size: cover;
    display: flex;
    width: 100%;
    height: 530px;
@@ -61,13 +71,13 @@ body {
 
 }
 
-#gifs-1 {
+.gifs-1 {
    margin: 5% auto auto 2%;
    width: 50%;
    min-width: 50%;
    height: 380px;
    min-height: 380px;
-   border-radius: 10px;
+   border-radius: 20px;
 
 }
 
@@ -88,5 +98,127 @@ body {
 .enfase2 {
    text-shadow: 4px 0 1px #FF5757;
    font-size: 40px;
+
+}
+
+.enfase3 {
+   color: #FF5757;
+   font-size: 19px;
+
+}
+
+.val-maps-div {
+   overflow: hidden;
+   background-color: #FAEDDA;
+   background: url(/img/Val-background-body2.png) no-repeat;
+   background-size: cover;
+   display: flex;
+   width: 100%;
+   height: 530px;
+   max-height: 530px;
+
+}
+
+.val-maps-div img {
+   margin: 5% 2% auto auto;
+   width: 50%;
+   min-width: 50%;
+   height: 380px;
+   min-height: 380px;
+   border-radius: 10px;
+
+}
+
+.val-maps-text {
+   padding: 6% 8%;
+   font-family: 'Montserrat', sans-serif;
+   text-align: justify;
+   color: black;
+   font-size: 17px;
+
+}
+
+.val-agents-div {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 530px;
+   max-height: 530px;
+
+}
+
+.val-agents-div video {
+   width: 100%;
+
+}
+
+.agent {
+   position: absolute;
+   width: 18%;
+   right: 15%;
+
+}
+
+.val-agents-titulo {
+   position: absolute;
+   left: 13%;
+   top: 5%;
+}
+
+.val-agents-text {
+   width: 33.8%;
+   height: 217px;
+   left: 12%;
+   top: 36%;
+   text-align: justify;
+   font-size: 17px;
+   position: absolute;
+   font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.rodape {
+   margin-top: 40px;
+   width: 100%;
+   height: 200px;
+   background-color: #FF5757;
+
+}
+
+.transition {
+   animation: agents-trasition 1.5s linear;
+
+}
+
+@keyframes agents-trasition {
+
+   from {
+      opacity: 1;
+      right: 15%;
+
+   }
+
+   to {
+      opacity: 0;
+      right: 20%;
+
+   }
+
+
+}
+
+
+::-webkit-scrollbar {
+   width: 15px;
+   background-color: #FF5757;
+   border: solid 0.3px black;
+
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #08172b;
+   border: solid 0.3px black;
+   border-radius: 5px;
 
 }
