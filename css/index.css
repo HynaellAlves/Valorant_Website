@@ -7,7 +7,7 @@
 }
 
 body {
-   background: url(/img/Val-background-body.png) no-repeat fixed;
+   background: url(/img/backgrounds/Val-background-body.png) no-repeat fixed;
    background-size: contain;
    background-color: #0d1620;
 
@@ -62,7 +62,7 @@ body {
 .val-gifs {
    overflow: hidden;
    background-color: #FAEDDA;
-   background: url(/img/Val-background-body2.png) no-repeat;
+   background: url(/img/backgrounds/Val-background-body2.png) no-repeat;
    background-size: cover;
    display: flex;
    width: 100%;
@@ -110,7 +110,7 @@ body {
 .val-maps-div {
    overflow: hidden;
    background-color: #FAEDDA;
-   background: url(/img/Val-background-body2.png) no-repeat;
+   background: url(/img/backgrounds/Val-background-body2.png) no-repeat;
    background-size: cover;
    display: flex;
    width: 100%;
@@ -154,7 +154,8 @@ body {
 
 .agent {
    position: absolute;
-   width: 18%;
+   top: 5%;
+   width: 23%;
    right: 15%;
 
 }
@@ -187,7 +188,7 @@ body {
 }
 
 .transition {
-   animation: agents-trasition 1.5s linear;
+   animation: agents-trasition 2.7s linear;
 
 }
 
