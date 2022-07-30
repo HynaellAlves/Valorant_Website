@@ -1,0 +1,69 @@
+
+/* Container da sessão de agentes */
+
+.val-agents-div {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 530px;
+   max-height: 530px;
+
+}
+
+/* Ajustando video de fundo do container */
+
+.val-agents-div video {
+   width: 100%;
+
+}
+
+/* Ajustando elementos do container */
+
+.agent {
+   position: absolute;
+   top: 5%;
+   width: 23%;
+   right: 15%;
+
+}
+
+.val-agents-titulo {
+   position: absolute;
+   left: 13%;
+   top: 5%;
+}
+
+.val-agents-text {
+   width: 33.8%;
+   height: 217px;
+   left: 12%;
+   top: 36%;
+   text-align: justify;
+   font-size: 17px;
+   position: absolute;
+   font-family: 'Montserrat', sans-serif;
+
+
+}
+
+/* Transição dos agentes do container agentes */
+
+.transition {
+   animation: agents-trasition 2.7s linear;
+
+}
+
+ /* Criando a animação de transição */
+
+@keyframes agents-trasition {
+
+   from {
+      opacity: 1;
+      right: 15%;
+
+   } to {
+      opacity: 0;
+      right: 20%;
+
+   }
+}
