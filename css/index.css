@@ -24,9 +24,11 @@ body {
 /* Cabeçalho da página */
 
 .cabecalho {
+   overflow: hidden;
    position: fixed;
    width: 100%;
-   height: 50px;
+   height: 7%;
+   max-height: 50px;
    background-color: #0d1620;
 
 }
@@ -35,7 +37,7 @@ body {
 
 .cabecalho img {
    margin-left: 1%;
-   height: 40px;
+   height: 90%;
 
 }
 
@@ -48,16 +50,23 @@ body {
 /* Compões todos os componentes principais da página */
 
 .page {
+   padding-top: 5%;
    width: 94%;
+   height: 100%;
    margin: 0 auto;
 
+}
+
+.content {
+   width: 100%;
+   max-height: 530px;
 }
 
 /* Ajustando container do video de entrada no topo da página */
 
 .val-background1 {
    width: 100%;
-   height: 615px;
+   max-height: 615px;
 
 }
 
@@ -69,29 +78,33 @@ body {
 /* Ajustando container dos mini-videos de jogadas e texto sobre o game */
 
 .val-gifs {
-   overflow: hidden;
    background-color: #FAEDDA;
    background: url(/img/backgrounds/Val-background-body2.png) no-repeat;
    background-size: cover;
    display: flex;
+   align-items: center;
    width: 100%;
-   height: 530px;
-   max-height: 530px;
+   height: 100%;
 
 }
 
 .gifs-1 {
-   margin: 5% auto auto 2%;
-   width: 50%;
-   min-width: 50%;
-   height: 380px;
-   min-height: 380px;
+   margin: 0 auto 0 10%;
+   width: 100%;
+   border-radius: 20px;
+
+}
+
+.gifs-1 video {
+   width: 100%;
+   height: 100%;
    border-radius: 20px;
 
 }
 
 .gifs-1-text {
-   padding: 6% 8%;
+   overflow: hidden;
+   padding: 3% 8%;
    font-family: 'Montserrat', sans-serif;
    text-align: justify;
    color: black;
@@ -120,9 +133,6 @@ body {
    background: url(/img/backgrounds/Val-background-body2.png) no-repeat;
    background-size: cover;
    display: flex;
-   width: 100%;
-   height: 530px;
-   max-height: 530px;
 
 }
 
@@ -154,20 +164,26 @@ body {
 /* Banner de fechamento da página */
 
 .val-banner {
-   margin-top: 50px;
-   background: url(/img/Val-banner1-variavel.png) no-repeat;
+   margin-top: 2%;
    width: 100%;
-   height: 600px;
-   background-size: contain;
+   height: 100%;
+   max-height: 600px;
 
+}
+
+.val-banner img {
+
+   width: 100%;
+   height: 100%;
 }
 
 /* Rodapé da página contendo as informções de contado entre outras */
 
 .rodape {
-   margin-top: 40px;
+   margin-top: 2%;
    width: 100%;
-   height: 200px;
+   height: 30vh;
+   max-height: 25vh;
    background-color: #FF5757;
 
 }
@@ -186,4 +202,21 @@ body {
    border: solid 0.3px black;
    border-radius: 5px;
 
+}
+
+/* Para funcionamento do arquivo Resizer.js */
+
+.content-alpha {
+   height: 530px;
+   max-height: 530px;
+}
+
+.content-bravo {
+   height: 530px;
+   max-height: 530px;
+}
+
+.content-delta {
+   height: 530px;
+   max-height: 530px;
 }
