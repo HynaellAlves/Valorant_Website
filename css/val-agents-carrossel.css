@@ -1,18 +1,15 @@
+@import url(/css/index.css);
 
 /* Container da sessão de agentes */
 
 .val-agents-div {
    position: relative;
    overflow: hidden;
-   max-height: 530px;
-
-}
-
-/* Ajustando video de fundo do container */
-
-.val-agents-div video {
+   height: 100%;
+   background: url(/img/backgrounds/Val-background-body2.gif) no-repeat;
+   background-size: cover;
    width: 100%;
-   max-height: 530px;
+   height: 100%;
 
 }
 
@@ -22,7 +19,30 @@
    position: absolute;
    top: 5%;
    width: 23%;
-   right: 15%;
+   right: 18%;
+
+}
+
+.etiqueta-agents {
+   overflow: hidden;
+   position: absolute;
+   font-weight: bolder;
+   background-image: linear-gradient(to right, wheat, wheat, wheat, #FF5757);
+   right: 0;
+   bottom: 42%;
+   width: 14%;
+   height: 11%;
+}
+
+.nome-agent {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding-left: 10%;
+   align-items: center;
+   font-size: 23px;
+   color: #ff5a1e;
+   font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -53,17 +73,19 @@
 
 }
 
- /* Criando a animação de transição */
+/* Criando a animação de transição */
 
 @keyframes agents-trasition {
 
    from {
       opacity: 1;
-      right: 15%;
+      right: 18%;
 
-   } to {
+   }
+
+   to {
       opacity: 0;
-      right: 20%;
+      right: 23%;
 
    }
 }

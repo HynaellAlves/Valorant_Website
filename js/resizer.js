@@ -2,6 +2,7 @@ const content = document.querySelector('.content');
 const contentAlpha = document.querySelector('.content-alpha');
 const contentBravo = document.querySelector('.content-bravo');
 const contentDelta = document.querySelector('.content-delta');
+const contentVideo = document.querySelector('video')
 const contentHeight = content.getBoundingClientRect().height;
 
 resizer();

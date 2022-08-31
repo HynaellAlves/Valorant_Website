@@ -89,8 +89,8 @@ body {
 }
 
 .gifs-1 {
-   margin: 0 auto 0 10%;
-   width: 100%;
+   margin: 0 auto 0 8%;
+   width: 160%;
    border-radius: 20px;
 
 }
@@ -133,15 +133,14 @@ body {
    background: url(/img/backgrounds/Val-background-body2.png) no-repeat;
    background-size: cover;
    display: flex;
+   height: 100%;
+   align-items: center;
 
 }
 
 .val-maps-div img {
-   margin: 5% 2% auto auto;
-   width: 50%;
-   min-width: 50%;
-   height: 380px;
-   min-height: 380px;
+   margin: 0 7% 0 auto;
+   width: 44%;
    border-radius: 10px;
 
 }
