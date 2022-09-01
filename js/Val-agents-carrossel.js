@@ -68,8 +68,11 @@ const loop = setInterval(() => {
 
 }, 5000)
 
+// Script antigo apara fazer a troca de agentes
+// Uma ótima maneira de enxugar um scripts desses é ultilizando ARRAY como fiz acima
 
-/*if (n_agent == 1) {
+
+/* if (n_agent == 1) {
 
    agent.classList.add('transition');
 
@@ -376,4 +379,4 @@ const loop = setInterval(() => {
 
    n_agent = 1;
 
-}*/
+} */
