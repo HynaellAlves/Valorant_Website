@@ -13,8 +13,11 @@ OBS: é sempre aconselhável fazer isso antes de começar
 * {
    padding: 0;
    margin: 0;
+   box-sizing: border-box;
 
 }
+
+/* Corpo da página */
 
 body {
    background: url(/img/backgrounds/Val-background-body.png) no-repeat fixed;
@@ -137,11 +140,12 @@ body {
    display: flex;
    height: 100%;
    align-items: center;
+   flex-direction: row-reverse;
 
 }
 
 .val-maps-div img {
-   margin: 0 7% 0 auto;
+   margin: 0 auto 0 7%;
    width: 44%;
    border-radius: 10px;
 
