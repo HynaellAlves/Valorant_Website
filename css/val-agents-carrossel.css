@@ -10,7 +10,6 @@
    background-size: cover;
    width: 100%;
    height: 100%;
-   z-index: -100;
 
 }
 
@@ -28,11 +27,11 @@
    overflow: hidden;
    position: absolute;
    font-weight: bolder;
-   background-color: wheat;
+   background-color: #f5deb3;
    border-radius: 40px 0 15px 0;
    right: 0;
    bottom: 42%;
-   width: 15%;
+   width: 17%;
    height: 11%;
 }
 
@@ -44,7 +43,7 @@
    align-items: center;
    font-size: 23px;
    color: #ff5a1e;
-   letter-spacing: 5px;
+   letter-spacing: 3px;
    font-family: 'Raleway', sans-serif;
 
 }
