@@ -17,7 +17,7 @@
 
 .agent {
    position: absolute;
-   top: 5%;
+   top: 7%;
    width: 23%;
    right: 18%;
 
@@ -27,10 +27,11 @@
    overflow: hidden;
    position: absolute;
    font-weight: bolder;
-   background-image: linear-gradient(to right, wheat, wheat, wheat, #FF5757);
+   background-color: wheat;
+   border-radius: 40px 0 15px 0;
    right: 0;
    bottom: 42%;
-   width: 14%;
+   width: 15%;
    height: 11%;
 }
 
@@ -42,7 +43,8 @@
    align-items: center;
    font-size: 23px;
    color: #ff5a1e;
-   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 5px;
+   font-family: 'Raleway', sans-serif;
 
 }
 

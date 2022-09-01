@@ -1,9 +1,19 @@
+// Script para funcionamento do carrossel
+
+// Importando arquivo com os objetos de agentes (Link do arquivo do agente e nome)
+
 import agents from "./agents-data.js";
+
+// Capturando elementos do carrossel
 const agent = document.querySelector('.agent');
 const nome_agent = document.querySelector('.nome-agent');
+
+// Variáveis de lógica do carrossel
+
 var nome, formatarCaminho, src;
 var i = 0;
 
+// Loop para troca de agentes do carrossel
 
 const loop = setInterval(() => {
 
@@ -24,15 +34,15 @@ const loop = setInterval(() => {
 
       if (nome == 'Chamber') {
 
-         agent.style.top = '2%';
+         agent.style.top = '4%';
          agent.style.width = '18%';
 
       } else if (nome == 'Reyna') {
 
-         agent.style.top = '-10%';
+         agent.style.top = '-6%';
          agent.style.width = '21%';
       } else {
-         agent.style.top = '5%';
+         agent.style.top = '7%';
          agent.style.width = '23%';
       }
 

@@ -1,3 +1,10 @@
+// Objetos de Agentes do carrossel
+
+/* 
+Se trata de um array contendo vários objetos 
+representando os agentes com suas respectivas propriedades 
+ */
+
 const agents = [
 
    {
