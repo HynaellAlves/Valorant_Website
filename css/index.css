@@ -67,6 +67,7 @@ body {
 
 .content {
    width: 100%;
+   height: 530px;
    max-height: 530px;
 }
 
@@ -181,6 +182,75 @@ body {
 
 }
 
+.information-flex {
+   position: relative;
+   overflow: hidden;
+   background-color: #FAEDDA;
+   background: url(/img/backgrounds/Val-background-body2_red.png) no-repeat;
+   background-size: cover;
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+.val-comunidade-img {
+   padding-top: 2%;
+   padding-left: 7%;
+   display: flex;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+
+}
+
+.val-comunidade-img img {
+   width: 70%;
+   max-width: 350px;
+   border-radius: 10px;
+
+}
+
+.val-comunidade-text {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   height: 100%;
+   justify-content: center;
+
+}
+
+.val-comunidade-titulo {
+   margin-left: 12%;
+   width: 70%;
+}
+
+.comunidade-text {
+   font-family: 'Montserrat', sans-serif;
+   text-align: justify;
+   color: black;
+   font-size: 17px;
+   padding: 4% 15%;
+
+}
+
+.comunidade-enfase_familia {
+   text-shadow: 0 0 10px #bebebe;
+   color: #162c46;
+}
+
+.nick-sage {
+   color: #76fffa;
+   text-shadow: 0 0 4px black;
+}
+
+.bordao-sage {
+
+   animation: font-colors 5s infinite linear;
+
+}
+
+
+
 /* Banner de fechamento da página */
 
 .val-banner {
@@ -199,12 +269,23 @@ body {
 
 /* Rodapé da página contendo as informções de contado entre outras */
 
-.rodape {
+footer {
+   display: flex;
    margin-top: 2%;
    width: 100%;
-   height: 30vh;
-   max-height: 25vh;
-   background-color: #FF5757;
+   height: 20vh;
+   max-height: 20vh;
+   background-color: #8a2424;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.rodape {
+   display: flex;
+   width: 96%;
+   height: 80%;
+   background-color: #0d1620;
 
 }
 
@@ -224,6 +305,35 @@ body {
 
 }
 
+@keyframes font-colors {
+
+   0% {
+      color: black;
+   }
+
+   15% {
+
+      color: #00ff88;
+   }
+
+   25% {
+      color: white;
+   }
+
+   50% {
+      color: #094891;
+   }
+
+   75% {
+
+      color: #ff026b;
+   }
+
+   100% {
+      color: black;
+   }
+}
+
 /* Para funcionamento do arquivo Resizer.js */
 
 .content-alpha {
@@ -237,6 +347,12 @@ body {
 }
 
 .content-delta {
+   height: 530px;
+   max-height: 530px;
+}
+
+.content-echo {
+   position: relative;
    height: 530px;
    max-height: 530px;
 }

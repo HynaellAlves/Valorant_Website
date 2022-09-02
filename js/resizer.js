@@ -11,7 +11,8 @@
 
 // Capturando tamanho máximo da janela
 
-var windowWidthMax = window.innerWidth;
+const windowWidthMax = 1325;
+console.log('Tamanho da janela: ' + windowWidthMax);
 
 // Capturando os elementos do site a serem redimensionados
 
@@ -19,6 +20,7 @@ const content = document.querySelector('.content');
 const contentAlpha = document.querySelector('.content-alpha');
 const contentBravo = document.querySelector('.content-bravo');
 const contentDelta = document.querySelector('.content-delta');
+const contentEcho = document.querySelector('.content-echo');
 const contentVideo = document.querySelector('video');
 
 // Capturando altura do content geral de conteúdo
@@ -36,19 +38,20 @@ const enfaseMaps = document.querySelector('.enfaseMaps');
 const enfase2Maps = document.querySelector('.enfase2Maps');
 const enfase3Maps = document.querySelector('.enfase3Maps');
 const nome_agents = document.querySelector('.nome-agent');
+const comunidadeText = document.querySelector('.comunidade-text');
 
 // Capturando tamanho da fonte máximo
 
 var fontTextMax = window.getComputedStyle(fontGifs, null);
 var fontEnfaseMax = window.getComputedStyle(enfaseGifs, null);
 var fontAgentsMax = window.getComputedStyle(nome_agents, null);
+
+resizer();
+
 var fontText = parseInt(fontTextMax.getPropertyValue('font-size'));
 var fontEnfase = parseInt(fontEnfaseMax.getPropertyValue('font-size'));
 var fontAgent = parseInt(fontAgentsMax.getPropertyValue('font-size'));
 
-// Executando as funções assim que o script é carregado
-
-resizer();
 fontResizer();
 
 // ----------------------------------------------------------------------------------- //
@@ -102,6 +105,7 @@ function resizer() {
    contentAlpha.style.height = `${newContentHeight}px`;
    contentBravo.style.height = `${newContentHeight}px`;
    contentDelta.style.height = `${newContentHeight}px`;
+   contentEcho.style.height = `${newContentHeight}px`;
 
 }
 
@@ -148,6 +152,7 @@ function fontResizer() {
    enfase2Maps.style.fontSize = `${newFontSize_Enfase}px`;
    enfase3Maps.style.fontSize = `${newFontSize}px`;
    nome_agents.style.fontSize = `${newFontSize_Agent}px`;
+   comunidadeText.style.fontSize = `${newFontSize}px`;
 
 
 }
