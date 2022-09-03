@@ -182,7 +182,7 @@ body {
 
 }
 
-.information-flex {
+.val-comunidade-div {
    position: relative;
    overflow: hidden;
    background-color: #FAEDDA;
@@ -231,11 +231,6 @@ body {
    font-size: 17px;
    padding: 4% 15%;
 
-}
-
-.comunidade-enfase_familia {
-   text-shadow: 0 0 10px #bebebe;
-   color: #162c46;
 }
 
 .nick-sage {
@@ -289,6 +284,35 @@ footer {
 
 }
 
+.footer-text {
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   text-shadow: 0 0 1px white;
+   font-size: 13px;
+   width: 100%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 17%;
+}
+
+.enfase-nao {
+   color: #ff2828;
+   text-shadow: none;
+}
+
+.enfase-ano {
+
+   color: #FF5757;
+   text-shadow: 0 0 4px black;
+}
+
+.github {
+   color: #FF5757;
+   text-shadow: 0 0 4px black;
+}
+
 /* Estilizando Scrollbar da página com a temática do game */
 
 ::-webkit-scrollbar {
@@ -304,6 +328,8 @@ footer {
    border-radius: 5px;
 
 }
+
+/* Animação de blur do texto */
 
 @keyframes font-colors {
 
@@ -334,7 +360,10 @@ footer {
    }
 }
 
-/* Para funcionamento do arquivo Resizer.js */
+/* 
+Classe de contents das sessões individuais
+para funcionamento do arquivo Resizer.js
+ */
 
 .content-alpha {
    height: 530px;
