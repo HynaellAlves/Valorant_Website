@@ -6,7 +6,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/index.css">
-   <link rel="stylesheet" href="./css/val-agents-carrossel.css">
    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
    <title>Valorant Web</title>
 </head>
@@ -129,22 +128,30 @@
          </div>
       </div>
 
+      <div class="content content-charlie">
+         <div class="val-noticias-div">
+
+         </div>
+
+      </div>
+
       <!-- Sessão da comunidade e torneio -->
 
       <div class="content content-echo">
+
          <div class="val-comunidade-div">
 
-            <!-- Imagem da sessão -->
+            <!-- Imagem da sessão comunidade -->
 
             <div class="val-comunidade-img">
                <img src="/img/Val-Sage-gif.gif" alt="">
             </div>
 
-            <!-- Área de texto da sessão -->
+            <!-- Área de texto da sessão comunidade -->
 
             <div class="val-comunidade-text">
 
-               <!-- Título da sessão -->
+               <!-- Título da sessão comunidade -->
 
                <img class="val-comunidade-titulo" src="/img/Val-titulo-comunidade-text.png">
 
@@ -162,16 +169,55 @@
                </strong>
             </div>
          </div>
+
+         <!-- Sessão torneios -->
+
+
+         <div class="val-torneios-div">
+
+            <!-- Imagens da sessão torneios -->
+
+            <div class="val-torneios-img">
+               <div class="val-img"><img src="/Elementos/val-torneios-img.png"></div>
+               <div class="val-img"><img src="/Elementos/val-torneios-img2.png" alt=""></div>
+               <div class="val-img"><img src="/Elementos/val-torneios-img3.png" alt=""></div>
+            </div>
+
+            <!-- Área de texto da sessão torneios -->
+
+            <div class="val-torneios-text">
+
+               <!-- Título da sessão torneios -->
+
+               <img class="val-torneios-titulo" src="/img/Val-titulo-torneios-text.png">
+
+               <!-- Texto complementar -->
+
+               <strong class="torneios-text">
+                  <p>Os torneios de valorant são sensacionais, com premiações de cair o queixo</p>
+                  <br>
+                  <p>Participe dos torneios da <label class="enfase-torneios">comunidade</label> ou torça pelo seu time
+                     favorito nas competições <label class="enfase-torneios">internacionais</label>
+                  </p>
+                  <br>
+                  <p class="frase-torneios">Mostre ao mundo sua fome insaciável de vitória</p>
+               </strong>
+            </div>
+
+            <!-- Botão de transição entre as sessões -->
+
+         </div>
+         <button class="button-comunidade-torneios"></button>
       </div>
 
       <!-- Banner do fim da página -->
 
    </div>
 
-   <!-- <div class="val-banner">
+   <div class="val-banner">
       <img src="/img/Val-banner1-variavel.png">
    </div>
--->
+   
    <!-- Rodapé da página contendo algumas informações -->
 
    <footer>
@@ -185,7 +231,8 @@
             <p>Todo conteúdo aqui exibido, <label class="enfase-nao">não possui</label> o intuito de plagiar ou obter
                vantagem alguma sobre nada</p>
             <br>
-            <p>Mais informações no Github: <a class="github" href="https://github.com/hynaellalves">Github.com/hynaellalves</a></p>
+            <p>Mais informações no Github: <a class="github"
+                  href="https://github.com/hynaellalves">github.com/hynaellalves</a></p>
          </strong>
       </div>
    </footer>
@@ -195,6 +242,7 @@
 <!-- Scripit de transição dos agentes -->
 
 <script type="module" src="./js/Val-agents-carrossel.js"></script>
+<script src="./js/Val-comunidade-torneios.js"></script>
 <script src="/js/resizer.js"></script>
 
 </html>

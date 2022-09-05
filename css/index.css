@@ -1,3 +1,9 @@
+
+/* Importando arquivos CSS individuais de algumas sessões */
+
+@import url(/css/val-agents-carrossel.css);
+@import url(/css/val-comunidade-torneios.css);
+
 /* Importando fontes do google fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -66,6 +72,7 @@ body {
 }
 
 .content {
+   overflow: hidden;
    width: 100%;
    height: 530px;
    max-height: 530px;
@@ -182,68 +189,12 @@ body {
 
 }
 
-.val-comunidade-div {
-   position: relative;
-   overflow: hidden;
-   background-color: #FAEDDA;
-   background: url(/img/backgrounds/Val-background-body2_red.png) no-repeat;
-   background-size: cover;
-   display: flex;
+.val-noticias-div {
+
    width: 100%;
    height: 100%;
+   background: url(/img/backgrounds/Val-background-body1-redwhite.png);
 }
-
-.val-comunidade-img {
-   padding-top: 2%;
-   padding-left: 7%;
-   display: flex;
-   align-items: center;
-   width: 50%;
-   height: 100%;
-
-}
-
-.val-comunidade-img img {
-   width: 70%;
-   max-width: 350px;
-   border-radius: 10px;
-
-}
-
-.val-comunidade-text {
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   height: 100%;
-   justify-content: center;
-
-}
-
-.val-comunidade-titulo {
-   margin-left: 12%;
-   width: 70%;
-}
-
-.comunidade-text {
-   font-family: 'Montserrat', sans-serif;
-   text-align: justify;
-   color: black;
-   font-size: 17px;
-   padding: 4% 15%;
-
-}
-
-.nick-sage {
-   color: #76fffa;
-   text-shadow: 0 0 4px black;
-}
-
-.bordao-sage {
-
-   animation: font-colors 5s infinite linear;
-
-}
-
 
 
 /* Banner de fechamento da página */
@@ -262,7 +213,7 @@ body {
    height: 100%;
 }
 
-/* Rodapé da página contendo as informções de contado entre outras */
+/* Rodapé da página contendo as informções de contado entre outras informações */
 
 footer {
    display: flex;
@@ -279,10 +230,13 @@ footer {
 .rodape {
    display: flex;
    width: 96%;
-   height: 80%;
+   height: 84%;
    background-color: #0d1620;
+   border-radius: 5px;
 
 }
+
+/* Texto do rodapé */
 
 .footer-text {
    font-family: 'Montserrat', sans-serif;
@@ -297,6 +251,8 @@ footer {
    padding: 0 17%;
 }
 
+/* Destaques do texto para fins de estilização */
+
 .enfase-nao {
    color: #ff2828;
    text-shadow: none;
@@ -308,10 +264,22 @@ footer {
    text-shadow: 0 0 4px black;
 }
 
+/* Link do github no texto */
+
+.footer-text a {
+   text-decoration: none;
+}
+
 .github {
    color: #FF5757;
    text-shadow: 0 0 4px black;
 }
+
+.github:hover {
+   color: #FF5757;
+   text-shadow: 0 0 10px rgb(153, 153, 153);
+}
+
 
 /* Estilizando Scrollbar da página com a temática do game */
 
@@ -327,37 +295,6 @@ footer {
    border: solid 0.3px black;
    border-radius: 5px;
 
-}
-
-/* Animação de blur do texto */
-
-@keyframes font-colors {
-
-   0% {
-      color: black;
-   }
-
-   15% {
-
-      color: #00ff88;
-   }
-
-   25% {
-      color: white;
-   }
-
-   50% {
-      color: #094891;
-   }
-
-   75% {
-
-      color: #ff026b;
-   }
-
-   100% {
-      color: black;
-   }
 }
 
 /* 
@@ -380,7 +317,13 @@ para funcionamento do arquivo Resizer.js
    max-height: 530px;
 }
 
+.content-charlie {
+   height: 530px;
+   max-height: 530px;
+}
+
 .content-echo {
+   display: flex;
    position: relative;
    height: 530px;
    max-height: 530px;

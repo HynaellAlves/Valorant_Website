@@ -1,0 +1,251 @@
+/* Content da sessão comunidade */
+
+.val-comunidade-div {
+   position: relative;
+   overflow: hidden;
+   background: url(/img/backgrounds/Val-background-body3.gif);
+   background-size: cover;
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+
+/* Imgame.gif do content comunidade */
+
+.val-comunidade-img {
+   padding-top: 2%;
+   padding-left: 7%;
+   display: flex;
+   align-items: center;
+   width: 50%;
+   height: 100%;
+
+}
+
+.val-comunidade-img img {
+   width: 70%;
+   max-width: 350px;
+   border-radius: 10px;
+
+}
+
+/* Div de texto sobre a comunidade */
+
+.val-comunidade-text {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   height: 100%;
+   justify-content: center;
+
+}
+
+/* Título da sessão */
+
+.val-comunidade-titulo {
+   margin-left: 12%;
+   width: 70%;
+}
+
+/* Texto da sessão */
+
+.comunidade-text {
+   font-family: 'Montserrat', sans-serif;
+   text-align: justify;
+   color: black;
+   font-size: 17px;
+   padding: 5% 15%;
+
+}
+
+/* Destaque nome da frase do agente */
+
+.nick-sage {
+   color: #76fffa;
+   text-shadow: 0 0 4px black;
+}
+
+/* Frase do agente com efeito de cores */
+
+.bordao-sage {
+
+   animation: font-colors 7s infinite linear;
+
+}
+
+/* Transições de entrada/saída entre as sessões de comunidade e torneio */
+
+.transitionOut {
+
+   animation: transitionOut 2s ease-in;
+
+}
+
+.transitionOn {
+
+   animation: transitionOn 2s ease-in;
+}
+
+/* Content da sessão de torneios */
+
+.val-torneios-div {
+   position: absolute;
+   overflow: hidden;
+   background: url(/img/backgrounds/Val-background-body3_reverse.gif);
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   right: -100%;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Imagens da sessão */
+
+.val-torneios-img {
+   display: flex;
+   align-items: center;
+   width: 63%;
+   height: 100%;
+   justify-content: space-around;
+
+}
+
+.val-img {
+   height: 70%;
+   width: 30%;
+   max-width: 230px;
+   background-color: #4E3133;
+   background-size: cover;
+   border-radius: 25% 0 25% 0;
+
+}
+
+.val-img img {
+
+   width: 100%;
+   height: 100%;
+   border-radius: 25% 0 25% 0;
+}
+
+/* Texto da sessão */
+
+.val-torneios-text {
+   display: flex;
+   flex-direction: column;
+   width: 37%;
+   height: 100%;
+   justify-content: center;
+
+}
+
+.val-torneios-titulo {
+   margin-left: 6%;
+   width: 80%;
+}
+
+.torneios-text {
+   font-family: 'Montserrat', sans-serif;
+   text-align: justify;
+   color: white;
+   font-size: 16px;
+   padding: 5% 12% 5% 5%;
+
+}
+
+.enfase-torneios {
+
+   color: #ffa3a3;
+   text-shadow: 0 0 10px #ff4f4f;
+
+}
+
+.frase-torneios {
+
+   animation: font-colors 7s infinite linear;
+
+}
+
+/* Botão de transição entre as sessões */
+
+.button-comunidade-torneios {
+   position: absolute;
+   bottom: 45%;
+   right: -1.3%;
+   width: 5%;
+   height: 11%;
+   background: url(/Elementos/button-content-transition.png);
+   background-color: #FF5757;
+   background-size: cover;
+   border-radius: 100%;
+   border: solid 1px black;
+   opacity: 0.7;
+
+}
+
+.button-comunidade-torneios:hover {
+   opacity: 1;
+
+}
+
+
+/* Animação de blur do texto */
+
+@keyframes font-colors {
+
+   0% {
+      color: black;
+   }
+
+   15% {
+
+      color: #00ff88;
+   }
+
+   25% {
+      color: white;
+   }
+
+   50% {
+      color: #094891;
+   }
+
+   75% {
+
+      color: #ff026b;
+   }
+
+   100% {
+      color: black;
+   }
+}
+
+/* Transição de saída */
+
+@keyframes transitionOut {
+
+   0% {
+      right: 0%;
+   }
+
+   100% {
+      right: 100%;
+   }
+
+}
+
+/* Transição de entrada */
+
+@keyframes transitionOn {
+
+   0% {
+      right: -100%;
+   }
+
+   100% {
+      right: 0;
+
+   }
+
+}

@@ -39,18 +39,24 @@ const enfase2Maps = document.querySelector('.enfase2Maps');
 const enfase3Maps = document.querySelector('.enfase3Maps');
 const nome_agents = document.querySelector('.nome-agent');
 const comunidadeText = document.querySelector('.comunidade-text');
+const torneiosText = document.querySelector('.torneios-text');
+const footerText = document.querySelector('.footer-text');
 
 // Capturando tamanho da fonte máximo
 
 var fontTextMax = window.getComputedStyle(fontGifs, null);
 var fontEnfaseMax = window.getComputedStyle(enfaseGifs, null);
 var fontAgentsMax = window.getComputedStyle(nome_agents, null);
+var fontFooterMax = window.getComputedStyle(footerText, null);
+var fontTorneiosMax = window.getComputedStyle(torneiosText, null);
 
 resizer();
 
 var fontText = parseInt(fontTextMax.getPropertyValue('font-size'));
 var fontEnfase = parseInt(fontEnfaseMax.getPropertyValue('font-size'));
 var fontAgent = parseInt(fontAgentsMax.getPropertyValue('font-size'));
+var fontFooter = parseInt(fontFooterMax.getPropertyValue('font-size'));
+var fontTorneios = parseInt(fontTorneiosMax.getPropertyValue('font-size'));
 
 fontResizer();
 
@@ -128,18 +134,24 @@ function fontResizer() {
    var calcFontSize = fontText * porcentWindowResizer / 100;
    var calcFontSize_Enfase = fontEnfase * porcentWindowResizer / 100;
    var calcFontSize_Agent = fontAgent * porcentWindowResizer / 100;
+   var calcFontSize_Footer = fontFooter * porcentWindowResizer / 100;
+   var calcFontSize_Torneios = fontTorneios * porcentWindowResizer / 100;
 
    // Retirando casas decimais dos valores
 
    var descartDecimal = Math.trunc(calcFontSize);
    var descartDecimal_Enfase = Math.trunc(calcFontSize_Enfase);
    var descartDecimal_Agent = Math.trunc(calcFontSize_Agent);
+   var descartDecimal_Footer = Math.trunc(calcFontSize_Footer);
+   var descartDecimal_Torneios = Math.trunc(calcFontSize_Torneios);
 
    // Calculando o novo valor de fonte a ser atribuido
 
    var newFontSize = fontText - descartDecimal;
    var newFontSize_Enfase = fontEnfase - descartDecimal_Enfase;
    var newFontSize_Agent = fontAgent - descartDecimal_Agent;
+   var newFontSize_Footer = fontFooter - descartDecimal_Footer;
+   var newFontSize_Torneios = fontTorneios - descartDecimal_Torneios;
 
    // Atribuindo novo valor de fonte aos elementos
 
@@ -153,6 +165,8 @@ function fontResizer() {
    enfase3Maps.style.fontSize = `${newFontSize}px`;
    nome_agents.style.fontSize = `${newFontSize_Agent}px`;
    comunidadeText.style.fontSize = `${newFontSize}px`;
+   footerText.style.fontSize = `${newFontSize_Footer}px`;
+   torneiosText.style.fontSize = `${newFontSize_Torneios}px`;
 
 
 }
