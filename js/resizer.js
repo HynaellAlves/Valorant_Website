@@ -14,13 +14,11 @@
 const windowWidthMax = 1325;
 console.log('Tamanho da janela: ' + windowWidthMax);
 
+
 // Capturando os elementos do site a serem redimensionados
 
 const content = document.querySelector('.content');
-const contentAlpha = document.querySelector('.content-alpha');
-const contentBravo = document.querySelector('.content-bravo');
-const contentDelta = document.querySelector('.content-delta');
-const contentEcho = document.querySelector('.content-echo');
+const contentArray = document.getElementsByClassName('content');
 const contentVideo = document.querySelector('video');
 
 // Capturando altura do content geral de conteúdo
@@ -29,34 +27,30 @@ const contentHeight = content.getBoundingClientRect().height;
 
 // Capturando elementos de texto a serem redimensionados
 
-const fontGifs = document.querySelector('.gifs-1-text');
-const enfaseGifs = document.querySelector('.enfase');
-const enfase2Gifs = document.querySelector('.enfase2');
-const fontAgents = document.querySelector('.val-agents-text');
-const fontMaps = document.querySelector('.val-maps-text');
-const enfaseMaps = document.querySelector('.enfaseMaps');
-const enfase2Maps = document.querySelector('.enfase2Maps');
-const enfase3Maps = document.querySelector('.enfase3Maps');
+const menuButton = document.getElementsByClassName('val-menu-button');
+const font17 = document.getElementsByClassName('font17');
+const fontTitle = document.getElementsByClassName('fontTitle');
 const nome_agents = document.querySelector('.nome-agent');
-const comunidadeText = document.querySelector('.comunidade-text');
 const torneiosText = document.querySelector('.torneios-text');
 const footerText = document.querySelector('.footer-text');
 
 // Capturando tamanho da fonte máximo
 
-var fontTextMax = window.getComputedStyle(fontGifs, null);
-var fontEnfaseMax = window.getComputedStyle(enfaseGifs, null);
+var font17Max = window.getComputedStyle(font17[0], null);
+var fontTitleMax = window.getComputedStyle(fontTitle[0], null);
 var fontAgentsMax = window.getComputedStyle(nome_agents, null);
 var fontFooterMax = window.getComputedStyle(footerText, null);
 var fontTorneiosMax = window.getComputedStyle(torneiosText, null);
+var fontMenuButtonMax = window.getComputedStyle(menuButton[0], null);
 
 resizer();
 
-var fontText = parseInt(fontTextMax.getPropertyValue('font-size'));
-var fontEnfase = parseInt(fontEnfaseMax.getPropertyValue('font-size'));
+var font17Text = parseInt(font17Max.getPropertyValue('font-size'));
+var fontTitleText = parseInt(fontTitleMax.getPropertyValue('font-size'));
 var fontAgent = parseInt(fontAgentsMax.getPropertyValue('font-size'));
 var fontFooter = parseInt(fontFooterMax.getPropertyValue('font-size'));
 var fontTorneios = parseInt(fontTorneiosMax.getPropertyValue('font-size'));
+var fontMenuButton = parseInt(fontMenuButtonMax.getPropertyValue('font-size'));
 
 fontResizer();
 
@@ -108,11 +102,15 @@ function resizer() {
 
    // Atribuindo novo tamanho dos contents de acordo com a lógica
 
-   contentAlpha.style.height = `${newContentHeight}px`;
-   contentBravo.style.height = `${newContentHeight}px`;
-   contentDelta.style.height = `${newContentHeight}px`;
-   contentEcho.style.height = `${newContentHeight}px`;
+   for (var i = 0; i < contentArray.length; i++) {
 
+      contentArray[i].style.height = `${newContentHeight}px`;
+
+      if (i == contentArray - 1) {
+         i = 6
+      }
+
+   }
 }
 
 function fontResizer() {
@@ -131,40 +129,54 @@ function fontResizer() {
 
    // Calculando o valor equivalente a porcentagem tirada a cima, da fonte dos elementos
 
-   var calcFontSize = fontText * porcentWindowResizer / 100;
-   var calcFontSize_Enfase = fontEnfase * porcentWindowResizer / 100;
+   var calcFontSize17 = font17Text * porcentWindowResizer / 100;
+   var calcFontSizeTitle = fontTitleText * porcentWindowResizer / 100;
    var calcFontSize_Agent = fontAgent * porcentWindowResizer / 100;
    var calcFontSize_Footer = fontFooter * porcentWindowResizer / 100;
    var calcFontSize_Torneios = fontTorneios * porcentWindowResizer / 100;
+   var calcFontSize_Button = fontMenuButton * porcentWindowResizer / 100;
 
    // Retirando casas decimais dos valores
 
-   var descartDecimal = Math.trunc(calcFontSize);
-   var descartDecimal_Enfase = Math.trunc(calcFontSize_Enfase);
+   var descartDecimal17 = Math.trunc(calcFontSize17);
+   var descartDecimalTitle = Math.trunc(calcFontSizeTitle);
    var descartDecimal_Agent = Math.trunc(calcFontSize_Agent);
    var descartDecimal_Footer = Math.trunc(calcFontSize_Footer);
    var descartDecimal_Torneios = Math.trunc(calcFontSize_Torneios);
+   var descartDecimal_Button = Math.trunc(calcFontSize_Button);
 
    // Calculando o novo valor de fonte a ser atribuido
 
-   var newFontSize = fontText - descartDecimal;
-   var newFontSize_Enfase = fontEnfase - descartDecimal_Enfase;
+   var newFontSize17 = font17Text - descartDecimal17;
+   var newFontSizeTitle = fontTitleText - descartDecimalTitle;
    var newFontSize_Agent = fontAgent - descartDecimal_Agent;
    var newFontSize_Footer = fontFooter - descartDecimal_Footer;
    var newFontSize_Torneios = fontTorneios - descartDecimal_Torneios;
+   var newFontSize_Button = fontMenuButton - descartDecimal_Button;
 
    // Atribuindo novo valor de fonte aos elementos
 
-   fontGifs.style.fontSize = `${newFontSize}px`;
-   enfaseGifs.style.fontSize = `${newFontSize_Enfase}px`;
-   enfase2Gifs.style.fontSize = `${newFontSize_Enfase}px`;
-   fontAgents.style.fontSize = `${newFontSize}px`;
-   fontMaps.style.fontSize = `${newFontSize}px`;
-   enfaseMaps.style.fontSize = `${newFontSize_Enfase}px`;
-   enfase2Maps.style.fontSize = `${newFontSize_Enfase}px`;
-   enfase3Maps.style.fontSize = `${newFontSize}px`;
+   for (var i = 0; i < menuButton.length; i++) {
+      menuButton[i].style.fontSize = `${newFontSize_Button}px`;
+
+      if (i == menuButton - 1) {
+         i = 6
+      }
+
+   }
+
+   for (var i = 0; i < font17.length; i++) {
+
+      font17[i].style.fontSize = `${newFontSize17}px`;
+      fontTitle[i].style.fontSize = `${newFontSizeTitle}px`;
+
+      if (i == font17.length - 1) {
+         i = 6
+      }
+
+   }
+
    nome_agents.style.fontSize = `${newFontSize_Agent}px`;
-   comunidadeText.style.fontSize = `${newFontSize}px`;
    footerText.style.fontSize = `${newFontSize_Footer}px`;
    torneiosText.style.fontSize = `${newFontSize_Torneios}px`;
 
