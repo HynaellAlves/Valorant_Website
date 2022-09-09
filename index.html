@@ -7,6 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/index.css">
    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
    <title>Valorant Web</title>
 </head>
 
@@ -20,11 +22,30 @@
          <img src="./img/Val-Logo_Alternativa.png">
          <img class="pink-svg" src="./img/Valorant_pink.svg" alt="">
       </div>
-     
-      <div class="val-menu">
-         <button class="val-menu-button button1">Categorias</button>
-         <button class="val-menu-button button2">Contatos</button>
-      </div>
+
+      <ul class="val-menu">
+         <li class="val-menu-button categorias">
+            <span class="val-categorias-titulo">Categorias</span>
+            <ul class="val-categorias-submenu">
+               <a href="#mecanica">
+                  <li>Mecânica</li>
+               </a>
+               <a href="#agentes">
+                  <li>Agentes</li>
+               </a>
+               <a href="#mapas">
+                  <li>Mapas</li>
+               </a>
+               <a href="#comunidade-torneios">
+                  <li>Comunidade</li>
+               </a>
+               <a href="#comunidade-torneios">
+                  <li>Torneios</li>
+               </a>
+            </ul>
+         </li>
+         <li class="val-menu-button">Contatos</li>
+      </ul>
    </header>
 
    <!-- Container centralizado em que os elementos principais da página estão contidos -->
@@ -38,7 +59,7 @@
       </div>
 
       <!-- Mini-jogadas -->
-      <div class="content content-alpha">
+      <div id="mecanica" class="content content-alpha">
          <div class="val-gifs">
             <div class="gifs-1">
                <video src="./img/Val-gifs.mp4" autoplay muted loop></video>
@@ -70,7 +91,7 @@
 
       <!-- Sessão de agentes -->
 
-      <div class="content content-bravo">
+      <div id="agentes" class="content content-bravo">
          <div class="val-agents-div">
 
             <!-- Titulo da sessão -->
@@ -108,7 +129,7 @@
 
       <!-- Sessão dos mapas -->
 
-      <div class="content content-delta">
+      <div id="mapas" class="content content-delta">
 
          <div class="val-maps-div">
 
@@ -135,12 +156,12 @@
             <img src="./img/Val-maps-info.png">
          </div>
       </div>
-      
+
       <!-- Sessão da comunidade e torneio -->
 
       <div class="content content-echo">
 
-         <div class="val-comunidade-div">
+         <div id="comunidade-torneios" class="val-comunidade-div">
 
             <!-- Imagem da sessão comunidade -->
 
@@ -218,7 +239,7 @@
    <div class="val-banner">
       <img src="/img/Val-banner1-variavel.png">
    </div>
-   
+
    <!-- Rodapé da página contendo algumas informações -->
 
    <footer>

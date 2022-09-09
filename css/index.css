@@ -35,7 +35,6 @@ body {
 
 .cabecalho {
    display: flex;
-   overflow: hidden;
    position: fixed;
    width: 100%;
    height: 7%;
@@ -45,6 +44,8 @@ body {
    justify-content: space-between;
 
 }
+
+/* Div logo da página */
 
 .val-header-logos {
    display: flex;
@@ -57,18 +58,24 @@ body {
 
 }
 
+/* Div menu de opções */
+
 .val-menu {
    display: flex;
-   overflow: hidden;
    width: 80%;
    height: 100%;
    max-height: 50px;
    align-items: center;
    justify-content: flex-end;
+   list-style-type: none;
 
 }
 
+/* Botões do Menu */
+
 .val-menu-button {
+   display: flex;
+   flex-wrap: wrap;
    outline: none;
    width: 14%;
    height: 85%;
@@ -81,10 +88,72 @@ body {
    color: #08172b;
    font-weight: bolder;
    font-family: 'Montserrat', sans-serif;
-   text-align: center;
+   align-items: center;
+   justify-content: center;
+
 }
 
+/* Efeito botão apontado */
 
+.val-menu-button:hover{
+   background-image: linear-gradient(to right, #FF5757, #530b0b);
+}
+
+/* Titulo do botão categorias */
+
+.val-categorias-titulo {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Submenu de categorias */
+
+.val-categorias-submenu {
+   width: 100%;
+   display: none;
+   flex-direction: column;
+   justify-content: space-around;
+   background-image: linear-gradient(to right, #FF5757, #8a2424);
+   list-style-type: none;
+   box-sizing: border-box;
+
+}
+
+/* Efeito de aparecer e sumir do submenu de categorias */
+
+.categorias:hover .val-categorias-submenu {
+   display: flex;
+
+}
+
+/* Opções do submenu categorias */
+
+.val-categorias-submenu li {
+
+   color: black;
+   text-align: center;
+   width: 100%;
+   padding: 8%;
+
+}
+
+/* Resetando estilo de links da tag a (retirando sublinhado) */
+
+.val-categorias-submenu a {
+
+   text-decoration: none;
+}
+
+/* Efeito de opção apontada do submenu */
+
+.val-categorias-submenu li:hover {
+
+   background-image: linear-gradient(to right, #FF5757, #530b0b);
+
+}
 
 /* Elementos do cabeçalho */
 
@@ -109,6 +178,8 @@ body {
 }
 
 .content {
+   display: flex;
+   position: relative;
    overflow: hidden;
    width: 100%;
    height: 530px;
@@ -166,7 +237,7 @@ body {
 
 /* Destacando palavras de enfase da página */
 
-.fontTitle{
+.fontTitle {
    font-size: 40px;
 
 }
@@ -299,7 +370,7 @@ footer {
 /* Estilizando Scrollbar da página com a temática do game */
 
 ::-webkit-scrollbar {
-   width: 15px;
+   width: 8px;
    background-color: #FF5757;
    border: solid 0.3px black;
 
@@ -310,31 +381,4 @@ footer {
    border: solid 0.3px black;
    border-radius: 5px;
 
-}
-
-/* 
-Classe de contents das sessões individuais
-para funcionamento do arquivo Resizer.js
- */
-
-.content-alpha {
-   height: 530px;
-   max-height: 530px;
-}
-
-.content-bravo {
-   height: 530px;
-   max-height: 530px;
-}
-
-.content-delta {
-   height: 530px;
-   max-height: 530px;
-}
-
-.content-echo {
-   display: flex;
-   position: relative;
-   height: 530px;
-   max-height: 530px;
 }
